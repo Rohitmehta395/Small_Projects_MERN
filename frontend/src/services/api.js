@@ -11,3 +11,8 @@ export const registerAPI = async (credentials) => {
   const res = await api.post("/api/auth/register", credentials);
   return res.data;
 };
+
+export const loginAPI = async (credentials) => {
+  const res = await api.post("/api/auth/login", credentials);
+  return res.data;
+};
