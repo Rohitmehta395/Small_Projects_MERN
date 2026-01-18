@@ -24,7 +24,7 @@ const Login = () => {
       navigate("/");
     } catch (error) {
       if (error.response) {
-        setErrorMessage(error.response.data.message || "Registration failed.");
+        setErrorMessage(error.response.data.message || "Login failed.");
         console.error("Backend error:", error.response.data);
       } else if (error.request) {
         setErrorMessage("Server is not responding. Please try again later.");
